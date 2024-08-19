@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #007BFF;
+  }
+  
+  header .logo {
+    margin-bottom: 10px;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin: 20px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav .menu li {
+    margin: 0 15px;
+  }
+  
+  nav .menu a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  nav .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #007BFF;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .service {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .service h2 {
+    font-size: 1.75rem;
+    color: #007BFF;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  
+  .service ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 20px;
+  }
+  
+  .service ul li {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .service h2 {
+      font-size: 1.5rem;
+    }
+  
+    .service p, .service ul li {
+      font-size: 0.9rem;
+    }
+  }
+  

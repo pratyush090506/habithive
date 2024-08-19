@@ -1,0 +1,119 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d; /* Deep black for background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.checklist-container {
+    background-color: #1c1c1c; /* Dark gray for container */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); /* Stronger shadow for depth */
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    color: #ffffff; /* White text */
+}
+
+h2 {
+    text-align: center;
+    color: #ffcc33; /* Highlight color from Habit Hive gradient */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#habit-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+#habit-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    background-color: #2b2b2b; /* Slightly lighter gray */
+    color: #ffffff;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#habit-input:focus {
+    border-color: #ffcc33; /* Highlight input on focus */
+    outline: none;
+}
+
+#add-habit-btn {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #ffcc33);
+    color: #0d0d0d;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#add-habit-btn:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+#habit-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.habit-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2b2b2b;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease;
+}
+
+.habit-item.completed {
+    background-color: #3a3a3a;
+}
+
+.habit-item.completed .habit-name {
+    text-decoration: line-through;
+    color: #bbbbbb;
+}
+
+.habit-name {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.complete-btn {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #ffcc33);
+    color: #0d0d0d;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.complete-btn:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #007BFF;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }

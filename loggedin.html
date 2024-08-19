@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HabitHive</title>
+  <link rel="stylesheet" href="loggedin.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="LOGO.png" alt="LOGO" width="225" class="logo" />
+      <ul class="menu">
+        <li><a class="btn" href="index.html"> HOME </a></li>
+        <li><a class="btn" href="about.html"> ABOUT US </a></li>
+        <li><a class="btn" href="services.html"> SERVICES </a></li>
+        <li><a class="btn" href="contact.html"> CONTACT US </a></li>
+      </ul>
+      <div class="user-menu">
+        <button class="user-btn">User</button>
+        <div class="dropdown-content">
+          <a href="profile.html">Profile</a>
+          <a href="#" onclick="logout()">Logout</a>
+        </div>
+      </div>
+    </nav>
+    <h1 id="welcome-text">Welcome to HabitHive</h1>
+    <div class="Features">
+      <h1 id="features-text">Hello, What can we help you with?</h1>
+      <ul class="menu">
+        <li><a class="btn" href="hcheck.html"> HABIT TRACKER CHECKLIST </a></li>
+        <li><a class="btn" href="progress.html"> PROGRESS TRACKER </a></li>
+        <li><a class="btn" href="sc.html"> STREAK COUNTER </a></li>
+      </ul>
+    </div>
+  </header>
+
+  <script>
+    // JavaScript for user dropdown interaction
+    document.querySelector('.user-btn').addEventListener('click', function() {
+      document.querySelector('.dropdown-content').classList.toggle('show');
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(event) {
+      if (!event.target.matches('.user-btn')) {
+        var dropdowns = document.getElementsByClassName('dropdown-content');
+        for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+
+    // Logout function
+    function logout() {
+      alert("You have logged out!");
+      // Add your logout logic here
+    }
+  </script>
+  <footer>
+    <p>&copy; 2024 HabitHive. All rights reserved.</p>
+  </footer>
+</body>
+</html>

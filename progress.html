@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracker</title>
+    <link rel="stylesheet" href="progress.css">
+</head>
+<body>
+
+    <div class="progress-container">
+        <div class="logo-container">
+            <img src="LOGO.png" alt="Habit Hive Logo" class="habit-logo">
+        </div>
+        <h2>Your Progress</h2>
+        
+        <div class="progress-summary">
+            <p><span id="completed-habits">0</span> out of <span id="total-habits">0</span> habits completed</p>
+        </div>
+        
+        <div class="progress-bar-container">
+            <div id="progress-bar"></div>
+        </div>
+
+        <button id="back-to-checklist-btn">Back to Checklist</button>
+    </div>
+
+    <script src="progress.js"></script>
+
+    <footer>
+      <p>&copy; 2024 HabitHive. All rights reserved.</p>
+    </footer>
+</body>
+</html>

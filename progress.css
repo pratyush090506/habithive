@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0d0d; /* Deep black for background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.progress-container {
+    background-color: #1c1c1c; /* Dark gray for container */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8); /* Stronger shadow for depth */
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    color: #ffffff; /* White text */
+    text-align: center;
+}
+
+.logo-container {
+    margin-bottom: 15px;
+}
+
+.habit-logo {
+    max-width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+h2 {
+    color: #ffcc33; /* Highlight color from Habit Hive gradient */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.progress-summary {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.progress-bar-container {
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#progress-bar {
+    height: 100%;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #ffcc33); /* Gradient */
+    width: 0%; /* Default width, will be updated by JS */
+    transition: width 0.5s ease;
+}
+
+#back-to-checklist-btn {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b, #ffcc33);
+    color: #0d0d0d;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#back-to-checklist-btn:hover {
+    transform: scale(1.05);
+}
+footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #007BFF;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
